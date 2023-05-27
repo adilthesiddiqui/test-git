@@ -83,5 +83,6 @@ let  sum = 0 ;
         messageEL.innerText = "Want to play a round?";
         cardsEL.innerText = "Cards:";
         sumEL.innerText = "Sum:";
+        scoreEl.innerText= "";
       }
       
