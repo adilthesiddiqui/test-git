@@ -1,5 +1,5 @@
 let player = {
-    score:0 
+    score:100 
 }
 let cardsarray = [] // array of cards
 let hasblackjack = false;
@@ -46,7 +46,7 @@ let  sum = 0 ;
         else if( sum === 21){
             message = "You have black jack!! 🙌";
             hasblackjack = true;
-            player.score= 100;
+            scoreEl.innerText = player.score;
         }
         else {
             message= "You have lost 😭";
@@ -55,7 +55,7 @@ let  sum = 0 ;
         messageEL.innerText = message;
         sumEL.innerText = "Sum: " + sum; 
         cardsEL.innerText = "Cards: " ;
-        scoreEl.innerText = player.score;
+        // scoreEl.innerText = player.score;
         for(let count=0; count <cardsarray.length ; count++){
             cardsEL.innerText += " "+ cardsarray[count] + " " ;
         }  
@@ -83,6 +83,6 @@ let  sum = 0 ;
         messageEL.innerText = "Want to play a round?";
         cardsEL.innerText = "Cards:";
         sumEL.innerText = "Sum:";
-        scoreEl.innerText= "";
+        scoreEl.innerText= "0";
       }
       
